@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    
+    <style>
+      .numberUp,.numberDown{
+        display:flex;
+        font-size: 30px;
+      }
+
+      .numberUp-content,.numberDown-content{
+        text-align: center;
+        padding: 30px;
+        margin: 10px;
+        color: white;
+        width: 100px;
+      }
+
+      .numberUp-content{
+        background-color: red;
+      }
+
+      .numberDown-content{
+        background-color: blue;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <!-- place navbar here -->
+    </header>
+    <main>
+        <div>
+            <h3>Bài tập MẢNG</h3>
+            <div class="d-flex">
+              <div class="mb-3">
+                <label class="form-label mx-5"> NHẬP SỐ </label>
+                <input  
+                  type="number"
+                  class="form-control w-50 mx-4"
+                  id="input-number"
+                />
+              </div>
+            <button id="array" class="btn btn-success mt-2 me-3">THÊM SỐ VÀO MẢNG</button>
+            <button id="arraydelete" class="btn btn-warning mt-2 me-3">XÓA PHẦN TỬ</button>
+            <button id="arraydeleteall" class="btn btn-danger mt-2">XÓA HẾT</button>
+
+          </div>
+          <h2 class="mt-3 text-success" id="output-result">
+          <!-- <h2 class="mt-3 text-warning" id="output-result1"></h2> -->
+          </h2>
+        </div>
+
+        <div class="numberUp">
+          
+        </div>
+
+        <div class="numberDown">
+       
+        </div>
+        
+         <!-- EX1 -->
+         <div class="ex1">
+        <button id="ex1" class="btn btn-primary mt-2">1 - TỔNG CÁC SỐ DƯƠNG</button>
+         <h2 class="mt-3 text-success" id="output-ex1">
+         </div>
+         
+         <!-- EX2 -->
+         <div class="ex2">
+            <button id="ex2" class="btn btn-primary mt-2">2 - ĐẾM CÁC SỐ DƯƠNG</button>
+            <h2 class="mt-3 text-success" id="output-ex2">
+         </div>
+
+         <!-- EX3 -->
+         <div class="ex3">
+            <button id="ex3" class="btn btn-primary mt-2">3 - TÌM SỐ NHỎ NHẤT</button>
+            <h2 class="mt-3 text-success" id="output-ex3">
+         </div>
+
+         <!-- EX4 -->
+         <div class="ex4 ">
+            <button id="ex4" class="btn btn-primary mt-2">4 - TÌM SỐ DƯƠNG NHỎ NHẤT</button>
+            <h2 class="mt-3 text-success" id="output-ex4">
+         </div>
+        
+         <!-- EX5 -->
+         <div class="ex5">
+            <button id="ex5" class="btn btn-primary mt-2">5 - TÌM SỐ CHẲN CUỐI NHẤT</button>
+            <h2 class="mt-3 text-success" id="output-ex5">
+         </div>
+
+          <!-- EX6 -->
+          <div class="ex6">
+            <button id="ex6" class="btn btn-primary mt-2">6 - ĐỔI CHỖ</button>
+            <input id="index1" min=0 type="number">
+            <input id="index2" min=0 type="number">
+            <h2 class="mt-3 text-success" id="output-ex6">
+         </div>
+
+         <!-- EX7 -->
+         <div class="ex7">
+            <button id="ex7" class="btn btn-primary mt-2">7 - SẮP XẾP TĂNG DẦN</button>
+            <h2 class="mt-3 text-success" id="output-ex7">
+         </div>
+
+         <!-- EX8 -->
+         <div class="ex8">
+          <button id="ex8" class="btn btn-primary mt-2">8 - TÌM SỐ NGUYÊN ĐẦU TIÊN</button>
+          <h2 class="mt-3 text-success" id="output-ex8">
+       </div>
+
+       <!-- EX9 -->
+       <div class="ex9">
+        <button id="ex9" class="btn btn-primary mt-2">9 - ĐẾM CÁC SỐ NGUYÊN </button>
+        <h2 class="mt-3 text-success" id="output-ex9">
+     </div>
+
+        <!-- EX10 -->
+       <div class="ex10">
+        <button id="ex10" class="btn btn-primary mt-2">10 - SO SÁNH ÂM VÀ DƯƠNG </button>
+        <h2 class="mt-3 text-success" id="output-ex10">
+     </div>
+
+        
+    </main>
+    <footer>
+      <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
