@@ -90,7 +90,9 @@ document.getElementById("ex1").onclick = function () {
   var sum = 0;
   let html = `TỔNG CÁC SỐ DƯƠNG CỦA MẢNG : `;
   for (let i = 0; i < array.length; i++) {
-    sum += array[i];
+    if (array[i] > 0) {
+      sum += array[i];
+    }
   }
   html += sum;
   document.getElementById("output-ex1").innerHTML = html;
@@ -146,6 +148,10 @@ document.getElementById("ex5").onclick = function () {
     if (array[i] > 0 && array[i] % 2 == 0) {
       lastEven = array[i];
     }
+  }
+
+  if (lastEven == 0) {
+    return (document.getElementById("output-ex5").innerHTML = -1);
   }
   html += lastEven;
   document.getElementById("output-ex5").innerHTML = html;
@@ -209,6 +215,10 @@ document.getElementById("ex8").onclick = function () {
         break;
       }
     }
+  }
+
+  if (firstPrime == 0) {
+    return (document.getElementById("output-ex8").innerHTML = -1);
   }
   html += firstPrime;
   document.getElementById("output-ex8").innerHTML = html;
